@@ -118,7 +118,7 @@ namespace FNSBot
                                             dataMsg += $"Название: {item.Item1}\nИНН: {item.Item2}\nАдрес: {item.Item3}\n\n";
                                         }
                                     }
-
+                                    lastMsg = dataMsg;
                                     await botClient.SendMessage(update.Message.Chat, dataMsg);
 
                                 }
