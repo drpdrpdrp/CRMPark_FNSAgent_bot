@@ -102,7 +102,7 @@ namespace FNSBot
                             }
                             default:
                             {
-                                if (update.Message.Text.Substring(0,5) == "/inn ")
+                                if (update.Message.Text.Length >= 5 && update.Message.Text.Substring(0,5) == "/inn ")
                                 {
                                     string inn = update.Message.Text.Substring(5);
                                     string dataMsg = "";
