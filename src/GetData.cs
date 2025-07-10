@@ -24,8 +24,12 @@ namespace FNSBot
             var response = request.Response;
 
 
+
             var root = JObject.Parse(response);
             var agents = root["items"];
+
+            if (!agents.HasValues)
+                return null;
 
             // Парсинг json
             List<(string, string, string)> fnsData = new List<(string, string, string)>();

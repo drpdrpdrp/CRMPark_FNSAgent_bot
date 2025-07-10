@@ -109,7 +109,7 @@ namespace FNSBot
                                     var agentsList = GetData.Run(inn);
                                     if (agentsList == null)
                                     {
-                                        dataMsg = "Неккоректные параметры";
+                                        dataMsg = "Неккоректный ИНН";
                                     }
                                     else
                                     {
